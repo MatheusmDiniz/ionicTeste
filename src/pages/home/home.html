@@ -1,33 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>ADJUS</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page">
+<ion-list class="card-background-page">
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-item>
+    <ion-label stacked>Qual o seu nome?</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
 
-  <ion-card>
-    <img src="../../resources/ios/icon.png"/>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
-  </ion-card>
+  <ion-item>
+    <ion-label stacked>Quantos anos você tem?</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
 
-  <ion-card>
-    <img src="img/1.png.png"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
-  </ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-label>O que aconteceu com voce?</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">Agreção Fisica</ion-option>
+          <ion-option value="n64">Acidente de Carro</ion-option>
+          <ion-option value="ps">Agreção Verbal</ion-option>
+          <ion-option value="genesis">TESTE</ion-option>
+          <ion-option value="saturn">teste</ion-option>
+          <ion-option value="snes">amamosmf</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
 
-  <ion-card>
-    <img src="img/1.png.png"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="img/1.png.png"/>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
-  </ion-card>
-
-</ion-content>
+</ion-list>
